@@ -29,4 +29,10 @@ for path in files[1:]:
     assert "adoption agent" in joined, path.name
     assert "stage is indeterminate" in joined or "stage assessment: indeterminate" in joined, path.name
 
+# A repaired Run 1 copy, when supplied, must validate without overwriting raw evidence.
+repaired = root / "responses" / "independent_run_1_repaired.json"
+if repaired.exists():
+    fixed = json.loads(repaired.read_text())
+    assert fixed["agent"]["version"] == "1.0-team-synthesis"
+
 print("INDEPENDENT RUN CHECK PASSED: 3 conversations preserved; runs 2-3 valid; run 1 syntax failure retained; shared analytical boundary confirmed")
