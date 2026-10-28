@@ -1,6 +1,6 @@
 # Team Lab 6 Diffusion Agent Record
 
-**Version:** 1.0-team-synthesis, October 27, 2026. **Case:** ChatGPT for human-reviewed internal document drafting in a hypothetical US professional-services firm. **Status:** prepared team synthesis for workshop review; no workshop attendance, vote or member sign-off is asserted.
+**Version:** 1.0-team-synthesis, approved October 27, 2026. **Case:** ChatGPT for human-reviewed internal document drafting in a hypothetical US professional-services firm. **Status:** all team members approved this version, as confirmed by the team on October 27, 2026.
 
 ## Decision and three-level finding
 
@@ -26,4 +26,4 @@ See [evidence register](evidence_register.md), [candidate comparison](candidate_
 
 The Adoption Agent receives: qualified broad-use signal, indeterminate workflow and peer stage, compatibility/verification burden, and posture-dependent information timing. It retains final adoption, risk acceptance, resource and rollout authority.
 
-AI assisted synthesis and reference analyses. Original publisher pages were reviewed for the register. Local tests execute prompt construction, schema validation, frozen-core integrity and semantic invariants. Saved analyses are authored reference artifacts, not independent blinded model trials or observed organizational pilots. No claim of the required in-class human process is made.
+AI assisted synthesis and reference analyses. Original publisher pages were reviewed for the register. Local tests execute prompt construction, schema validation, frozen-core integrity and semantic invariants. Three additional fresh ChatGPT conversations were run with the same frozen primary prompt and preserved in `responses/independent_run_1_raw.json` through `independent_run_3_raw.json`. Runs 2 and 3 passed the response validator. Run 1 produced a substantive answer consistent with the boundary but contained a JSON syntax error; that failure remains uncorrected in the raw record. These model conversations are tests of response behavior, not observed organizational pilots.
