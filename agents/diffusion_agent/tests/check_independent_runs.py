@@ -34,5 +34,7 @@ repaired = root / "responses" / "independent_run_1_repaired.json"
 if repaired.exists():
     fixed = json.loads(repaired.read_text())
     assert fixed["agent"]["version"] == "1.0-team-synthesis"
+    assert "indeterminate" in fixed["application_finding"].lower()
+    assert "adoption agent" in fixed["recommendation_management_implication"].lower()
 
 print("INDEPENDENT RUN CHECK PASSED: 3 conversations preserved; runs 2-3 valid; run 1 syntax failure retained; shared analytical boundary confirmed")
