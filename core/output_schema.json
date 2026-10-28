@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MASY1800 Specialist Agent Output",
+  "type": "object",
+  "required": [
+    "agent",
+    "analytical_question",
+    "general_et_finding",
+    "application_finding",
+    "organization_specific_finding",
+    "evidence",
+    "contrary_evidence_or_limitations",
+    "confidence_and_uncertainty",
+    "value_opportunity_implication",
+    "risk_governance_implication",
+    "recommendation_management_implication",
+    "change_monitoring_triggers",
+    "abstention_or_more_information_needed"
+  ],
+  "properties": {
+    "agent": {
+      "type": "object",
+      "required": [
+        "name",
+        "specialty",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "specialty": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      }
+    },
+    "analytical_question": {
+      "type": "string"
+    },
+    "general_et_finding": {
+      "type": "string"
+    },
+    "application_finding": {
+      "type": "string"
+    },
+    "organization_specific_finding": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim",
+          "source_or_reference",
+          "date_or_recency",
+          "evidence_type",
+          "notes"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "source_or_reference": {
+            "type": "string"
+          },
+          "date_or_recency": {
+            "type": "string"
+          },
+          "evidence_type": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contrary_evidence_or_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence_and_uncertainty": {
+      "type": "string"
+    },
+    "value_opportunity_implication": {
+      "type": "string"
+    },
+    "risk_governance_implication": {
+      "type": "string"
+    },
+    "recommendation_management_implication": {
+      "type": "string"
+    },
+    "change_monitoring_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "abstention_or_more_information_needed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

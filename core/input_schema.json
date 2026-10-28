@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MASY1800 Emerging Technology Context Intake",
+  "type": "object",
+  "required": [
+    "emerging_technology",
+    "intended_application",
+    "organization",
+    "industry_sector",
+    "business_need",
+    "users_stakeholders",
+    "adoption_posture",
+    "capabilities_constraints",
+    "risk_consequence_context",
+    "management_question",
+    "time_horizon"
+  ],
+  "properties": {
+    "emerging_technology": {
+      "type": "string"
+    },
+    "intended_application": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "industry_sector": {
+      "type": "string"
+    },
+    "business_need": {
+      "type": "string"
+    },
+    "users_stakeholders": {
+      "type": "string"
+    },
+    "adoption_posture": {
+      "type": "string"
+    },
+    "capabilities_constraints": {
+      "type": "string"
+    },
+    "risk_consequence_context": {
+      "type": "string"
+    },
+    "management_question": {
+      "type": "string"
+    },
+    "time_horizon": {
+      "type": "string"
+    },
+    "additional_context": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

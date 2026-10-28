@@ -1,0 +1,4 @@
+MASY1-GC 1800 Common Emerging Technology Agent Scaffold
+Version: 1.0
+Status: FROZEN COURSE BASELINE
+Term: Fall 2026
