@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "ChatGPT conversational generative AI",
+  "intended_application": "Human-reviewed drafting of internal nonbinding documents from approved or synthetic inputs",
+  "organization": "Hypothetical 120-person US professional-services firm",
+  "industry_sector": "Professional services, unspecified specialization",
+  "business_need": "Reduce first-draft effort while preserving accuracy and review",
+  "users_stakeholders": "Analysts, reviewers, data owner and clients",
+  "capabilities_constraints": "Document review workflow; no local baseline or approved data policy supplied",
+  "risk_consequence_context": "Draft errors and confidential-data exposure could harm clients; no autonomous publication",
+  "management_question": "What does diffusion evidence imply for the timing of evidence gathering, leaving adoption to the Adoption Agent?",
+  "time_horizon": "Next six months from October 27, 2026",
+  "adoption_posture": "Conservative follower",
+  "additional_context": "Proposed posture-only contrast. Capabilities, permissions, consequences and evidence remain identical. Source register is injected by scripts/build_packets.py."
+}

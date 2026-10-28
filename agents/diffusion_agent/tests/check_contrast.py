@@ -14,4 +14,6 @@ for item in a[1:]:
  for field in ['general_et_finding','application_finding','evidence']:
   assert item[field]==a[0][field],f'{field} changed with posture'
 assert len({item['organization_specific_finding'] for item in a})==3
-print('CONTRAST PASSED: 3 contexts; external evidence and five factors stable; timing differs; adoption boundary retained')
+assert len({item['recommendation_management_implication'] for item in a})==3, 'Timing text is identical'
+print('REFERENCE CHECK PASSED: stable external findings and five factors; distinct context and timing text; adoption boundary retained')
+print('LIMIT: authored examples and different text do not establish materially different decisions or fresh model behavior')
